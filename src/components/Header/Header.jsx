@@ -12,14 +12,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Header = () => {
   return (
     <nav className="nav-container">
-      <div className="logo-container">
+      <NavLink to="/" className="logo-container">
         <img
           className="logo"
           src="public\images\allinone-logo-crop.jpeg"
           alt=""
         />
         <div className="title">All-In-One-Shop</div>
-      </div>
+      </NavLink>
       <div className="search-container">
         <FontAwesomeIcon
           className="search-icon"
