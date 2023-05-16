@@ -1,10 +1,13 @@
+import { NavLink } from "react-router-dom";
 import "./CategoryCard.css";
 
-const CategoryCard = ({ type }) => {
+const CategoryCard = ({ type, id }) => {
   return (
-    <div className="category-card-container">
-      <p>{type}</p>
-    </div>
+    <NavLink to={`/product/${id}`}>
+      <div className="category-card-container">
+        <p>{type}</p>
+      </div>
+    </NavLink>
   );
 };
 
