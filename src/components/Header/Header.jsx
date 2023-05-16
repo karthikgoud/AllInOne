@@ -33,13 +33,22 @@ const Header = () => {
         <NavLink to="/">
           <FontAwesomeIcon icon={faHouse} style={{ color: "#999a9a" }} />
         </NavLink>
-        <NavLink to="/wishlist">
-          <FontAwesomeIcon icon={faHeart} style={{ color: "#999a9a" }} />
-        </NavLink>
-        <NavLink className="cart-container" to="/cart">
-          <FontAwesomeIcon icon={faCartShopping} style={{ color: "#999a9a" }} />
-          <p>Cart</p>
-        </NavLink>
+        <div className="wishlist-box">
+          <span className="red-circle wish-counter">0</span>
+          <NavLink to="/wishlist">
+            <FontAwesomeIcon icon={faHeart} style={{ color: "#999a9a" }} />
+          </NavLink>
+        </div>
+        <div className="wishlist-box">
+          <span className="red-circle cart-counter">0</span>
+          <NavLink className="cart-container" to="/cart">
+            <FontAwesomeIcon
+              icon={faCartShopping}
+              style={{ color: "#999a9a" }}
+            />
+            <p>Cart</p>
+          </NavLink>
+        </div>
       </div>
     </nav>
   );
