@@ -15,8 +15,8 @@ const Header = () => {
       <NavLink to="/" className="logo-container">
         <img
           className="logo"
-          src="public\images\allinone-logo-crop.jpeg"
-          alt=""
+          src="/images/allinone-logo-crop.jpeg"
+          alt="logo"
         />
         <div className="title">All-In-One-Shop</div>
       </NavLink>
